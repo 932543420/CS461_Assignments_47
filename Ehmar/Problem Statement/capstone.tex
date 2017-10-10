@@ -1,0 +1,92 @@
+\documentclass[onecolumn, draftclsnofoot,10pt, compsoc]{IEEEtran}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{setspace}
+
+\usepackage{geometry}
+\geometry{textheight=9.5in, textwidth=7in}
+
+% 1. Fill in these details
+\def \CapstoneTeamName{		}
+\def \CapstoneTeamNumber{		47}
+\def \GroupMemberOne{			Ehmar Khan}
+\def \GroupMemberTwo{			Jiaxu Li}
+\def \GroupMemberThree{			Munisha Parikh}
+\def \CapstoneProjectName{		Database re-design for STEM Academy}
+\def \CapstoneSponsorCompany{	STEM Academy}
+\def \CapstoneSponsorPerson{		Carole Rodriguez}
+
+% 2. Uncomment the appropriate line below so that the document type works
+\def \DocType{		Problem Statement
+				%Requirements Document
+				%Technology Review
+				%Design Document
+				%Progress Report
+				}
+			
+\newcommand{\NameSigPair}[1]{\par
+\makebox[2.75in][r]{#1} \hfil 	\makebox[3.25in]{\makebox[2.25in]{\hrulefill} \hfill		\makebox[.75in]{\hrulefill}}
+\par\vspace{-12pt} \textit{\tiny\noindent
+\makebox[2.75in]{} \hfil		\makebox[3.25in]{\makebox[2.25in][r]{Signature} \hfill	\makebox[.75in][r]{Date}}}}
+% 3. If the document is not to be signed, uncomment the RENEWcommand below
+%\renewcommand{\NameSigPair}[1]{#1}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\begin{titlepage}
+    \pagenumbering{gobble}
+    \begin{singlespace}
+  %  	\includegraphics[height=4cm]{coe_v_spot1}
+        \hfill 
+        % 4. If you have a logo, use this includegraphics command to put it on the coversheet.
+        %\includegraphics[height=4cm]{CompanyLogo}   
+        \par\vspace{.2in}
+        \centering
+        \scshape{
+            \huge CS Capstone \DocType \par
+            {\large\today}\par
+            \vspace{.5in}
+            \textbf{\Huge\CapstoneProjectName}\par
+            \vfill
+            {\large Prepared for}\par
+            \Huge \CapstoneSponsorCompany\par
+            \vspace{5pt}
+            {\Large\NameSigPair{\CapstoneSponsorPerson}\par}
+            {\large Prepared by }\par
+            Group\CapstoneTeamNumber\par
+            % 5. comment out the line below this one if you do not wish to name your team
+            \CapstoneTeamName\par 
+            \vspace{5pt}
+            {\Large
+                \NameSigPair{\GroupMemberOne}\par
+                \NameSigPair{\GroupMemberTwo}\par
+                \NameSigPair{\GroupMemberThree}\par
+            }
+            \vspace{20pt}
+        }
+        \begin{abstract}
+        % 6. Fill in your abstract    
+        STEM Academy requires a database system to collect survey data for assessment, in order to determine their impacts on the respective participants.This will allow easy access to information that can be used to apply for funding for continued growth of the program. A Capstone team developed a database last year that doesn't meet all requirements, and isn't fully functional. Our team will review the coding from the previous project, and make necessary changes to improve the database system and hopefully meet all of the requirements. We will also be providing standard reporting and work on graphics, pre-programmed into the system.
+        \end{abstract}     
+    \end{singlespace}
+\end{titlepage}
+\newpage
+\pagenumbering{arabic}
+\tableofcontents
+% 7. uncomment this (if applicable). Consider adding a page break.
+%\listoffigures
+%\listoftables
+\clearpage
+
+% 8. now you write!
+\section{Knowledge Required}
+- Skills to understand the current database system, and make changes to it to meet the program requirements.\newline
+- Be able to work with an employee who isn't tech-savvy and collaborate on a regular basis.
+\section{Objectives}
+- Communicate with non-computer science employee to comprehend the program requirements and make appropriate design decisions. \newline
+- Study the current code of the database and make changes as needed.
+- Generate standard reports.
+- Resulting database should allow for changes in survey data in the future.
+\section{Deliverables}
+- A database system that is improved upon from last year, is fully functional and meets all the requirements.
+\end{document}
