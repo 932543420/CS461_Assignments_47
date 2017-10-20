@@ -1,0 +1,117 @@
+\documentclass[onecolumn, draftclsnofoot,10pt, compsoc]{IEEEtran}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{setspace}
+
+\usepackage[margin=0.75in]{geometry}
+\geometry{textheight=8.5in, textwidth=6in}
+
+\newcommand{\cred}[1]{{\color{red}#1}}
+\newcommand{\cblue}[1]{{\color{blue}#1}}
+
+\newcommand{\toc}{\tableofcontents}
+
+\usepackage{hyperref}
+
+\def\name{Group 47}
+
+%pull in the necessary preamble matter for pygments output
+\input{pygments.tex}
+
+%% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {CS 461 ``Senior Design'' Program Statement},
+  pdftitle = {CS 461 Program Statement},
+  pdfsubject = {CS 461},
+  pdfpagemode = UseNone
+}
+
+\parindent = 0.0 in
+\parskip = 0.1 in
+
+\begin{document}
+%\include(gitlog.tex)
+\begin{titlepage}
+		
+		\begin{center}
+		\bigbreak	
+		\textbf{Program Statement}
+	
+  	by Jiaxu Li, Munisha Prakash Parikh,Ehmar Khan
+
+  	  Group 47
+
+  	  20 October 2017
+   
+		 CS 461 Fall 2017
+    
+   		\end{center}
+        \begin{abstract}
+        % 6. Fill in your abstract    
+        STEM Academy requires a database system to collect survey data for assessment, in order to determine their impacts on the respective participants.This will allow easy access to information that can be used to apply for funding for continued growth of the program. A Capstone team developed a database last year that doesn't meet all requirements, and isn't fully functional. Our team will review the coding from the previous project, and make necessary changes to improve the database system and hopefully meet all of the requirements. We will also be providing standard reporting and work on graphics, pre-programmed into the system.
+        \end{abstract}     
+\end{titlepage}
+\newpage
+\pagenumbering{arabic}
+\tableofcontents
+% 7. uncomment this (if applicable). Consider adding a page break.
+%\listoffigures
+%\listoftables
+\clearpage
+
+% 8. now you write!
+\section{Overview}
+STEM Academy provides a great many quality programs with K-12 students every year. In order to determine the impacts on participants and apply for future funding from various sources, they need a well functional database system to process mass data. Much of the data is also used for feedback to make any necessary camp changes. The current database system is functional, but has flaws that prevent the Program from using it. For a successful completion of the project we need to consider the following:
+\newline \newline
+
+Knowledge required: \newline
+- Skills to understand the current database system, and make changes to it to meet the program requirements. \newline
+- Be able to work with an employee who isn\rq t tech-savvy and collaborate on a regular basis.\newline\newline
+
+Objectives: \newline
+- Communicate with non-computer science employee to comprehend the program requirements and make appropriate design decisions.\newline
+- Study the current code of the database and make changes as needed. \newline
+- Generate standard reports. \newline
+- Resulting database should allow for changes in survey questions in the future.\newline\newline
+
+Deliverables: \newline
+- A database system that is improved upon from last year, is fully functional and meets all the requirements.\newline\newline
+
+
+\section{Problem Definition and Description}
+The first problem is that the current database system does not allow our client to add additional names to the camp while it is running. Some participants are added after the start of the camp, who need to take the survey as well. This would require replacing the current csv file with a new one, and there is no way to simply add more names to the camp without affecting the survey of other participants. They need a system that can easily adapt to the changes in camp. Our clients also want to be able to manually input surveys at the end of a camp, in case they don\rq t have access to computers for that camp.
+\newline
+
+The current database system does not allow our client to overwrite the surveys that have already been saved, or delete the surveys that they do not want. This means making a mistake would require making a new survey with the same name, since that survey will refer back to the same camp. This can build up a lot of junk files, making it hard to manipulate the storage system. 
+\newline
+
+The current survey forms don\rq t allow students to change an answer they have chosen, which needs to be fixed as well. Additionally, our client wants the new database system to have a new functionality that generates some standard reports including some graphics that look finished enough to share directly with outside entities.
+\newline\newline
+
+\section{Suggested Solutions}
+To add new users to the system during the camp, we could add text boxes to the form which allows new users to enter their name along with other attributes common to rest of the participants. This information would automatically get added as a new row to the database. To implement this, we will need to add some code to the form and modify the way the php files interact with the database. \newline
+
+We could also follow suggestions from the last Capstone team since they have much more experience with the project than us. They suggested an alternate approach would be to use Qualtrics or some other survey softwares, which could help process the data faster. We could also use scantron or some form of OCR and store them digitally, although that could require additional funding.
+\newline
+
+We can also modify the code such that it allows us to enter a survey name for the survey we want to delete or update in the system. Editing the php code files accordingly would allow us to make sure the database is updated with changes to the survey. 
+\newline
+
+We can check if the forms have correct input methods to make sure participants are able to make the changes they need to make during a survey. For example, if a participant can select multiple options, the form tag needs to be of type \lq checkbox \rq, so that the participant can select and unselect options at will. These are simple code changes that can help us achieve most of our goals on time.
+\newline
+
+To generate standard report, we can use a tool that exports a csv from the database system which has the survey data. This csv could be uploaded to a software such as R Studio, that processes the data and gives us various plots and report of the information.
+\newline\newline
+
+\section{Performance Metrics}
+A performance metric for our project would  measure the project's behavior, activities, and performance. We would achieve our metric on how successful the project is. We would determine this on the following basis: \newline
+-How successful are we? By this we mean that how comfortable and easy it is for our clients to use the system. \newline
+-How fast is the running time of the Database System? \newline
+-How satisfied are the users? \newline
+-Is it usable? \newline
+If these conditions are fulfilled then we can say that we have met at least 90 percent of our performance metrics. \newline
+
+\end{document}
