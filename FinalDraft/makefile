@@ -10,4 +10,3 @@ all:
 	rm capstone.log
 	rm capstone.ps
 	rm capstone.out
-	
