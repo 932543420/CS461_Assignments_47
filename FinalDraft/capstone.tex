@@ -19,15 +19,15 @@
 %\input{pygments.tex}
 
 %% The following metadata will show up in the PDF properties
-%\hypersetup{
-%  colorlinks = true,
-%  urlcolor = black,
-%  pdfauthor = {\name},
-%  pdfkeywords = {CS 461 ``Senior Design'' Problem Statement},
-%  pdftitle = {CS 461 Program Statement},
-%  pdfsubject = {CS 461},
-%  pdfpagemode = UseNone
-%}
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {CS 461 ``Senior Design'' Problem Statement},
+  pdftitle = {CS 461 Program Statement},
+  pdfsubject = {CS 461},
+  pdfpagemode = UseNone
+}
 
 \parindent = 0.0 in
 \parskip = 0.1 in
@@ -38,7 +38,7 @@
 		
 		\begin{center}
 		\bigbreak	
-		\textbf{Problem Statement}
+		\textbf{Problem Statement of DATABASE RE-DESIGN FOR STEM ACADEMY}
 	
   	by Jiaxu Li, Munisha Prakash Parikh, Ehmar Khan
 
@@ -82,7 +82,7 @@ Deliverables: \newline
 
 
 \section{Problem Definition and Description}
-The first problem is that the current database system does not allow our client to add additional names to the camp while it is running. Some participants are added after the start of the camp, who need to take the survey as well. This would require replacing the current csv file with a new one, and there is no way to simply add more names to the camp without affecting the survey of other participants. They need a system that can easily adapt to the changes in camp. Our clients also want to be able to manually input surveys at the end of a camp, in case they don\rq t have access to computers for that camp.
+In the current system, the administrator uploads a csv file with the participant names for a camp. The first problem is that the current database system does not allow our client to add additional names to the camp while it is running. Some participants are added after the start of the camp, who need to take the survey as well. This would require replacing the current csv file with a new one, and there is no way to simply add more names to the camp without affecting the survey of other participants. They need a system that can easily adapt to the changes in camp. Our clients also want to be able to manually input surveys at the end of a camp, in case they don\rq t have access to computers for that camp.
 \newline
 
 The current database system does not allow our client to overwrite the surveys that have already been saved, or delete the surveys that they do not want. This means making a mistake would require making a new survey with the same name, since that survey will refer back to the same camp. This can build up a lot of junk files, making it hard to manipulate the storage system. 
